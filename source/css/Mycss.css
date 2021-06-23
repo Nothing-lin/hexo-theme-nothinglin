@@ -30,6 +30,10 @@
   color: #F3EEE5 !important;
 }
 
+.font-white {
+  color: white !important;
+}
+
 /* -------border--------- */
 .border-none {
   border: none !important;
@@ -91,8 +95,16 @@
   margin-top: 15px !important;
 }
 
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
 .margin-top-30 {
   margin-top: 30px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30 !important;
 }
 
 .margin-15 {
@@ -122,6 +134,10 @@
 /* -------padding--------- */
 .padding-less {
   padding: 0px !important;
+}
+
+.padding-5 {
+  padding: 5px !important;
 }
 
 .padding-title {
@@ -193,5 +209,9 @@ body {
   background-color: #F4A81E;
 }
 
-/* ------分页栏------- */
-.pagination {}
+/* ------页脚------- */
+.page-footer {
+  text-align: center;
+  color: #F3EEE5;
+  font-size: 16px !important;
+}
