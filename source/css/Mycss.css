@@ -7,16 +7,22 @@
   background-color: #F3EEE5 !important;
 }
 
-.background-thin-red{
-  background-color: #D56464!important;
-  color: white!important;
-  border-color: rgb(255 64 64 / 15%)!important;
+.background-thin-red {
+  background-color: #D56464 !important;
+  color: white !important;
+  border-color: rgb(255 64 64 / 15%) !important;
 }
 
-.background-thin-red:hover{
-  background-color: #f46969!important;
-  color: white!important;
-  border-color: rgb(255 64 64 / 15%)!important;
+.background-title-red {
+  background-color: #D56464 !important;
+  color: white !important;
+  border-color: rgb(255 64 64 / 15%) !important;
+}
+
+.background-thin-red:hover {
+  background-color: #f46969 !important;
+  color: white !important;
+  border-color: rgb(255 64 64 / 15%) !important;
 }
 
 /* -------font-colors--------- */
@@ -43,7 +49,11 @@
 .row-flex {
   display: flex !important;
   flex-direction: row !important;
-  justify-content: space-between !important;
+  justify-content: flex-start !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
 }
 
 .col-flex {
@@ -57,6 +67,7 @@
   flex-direction: row !important;
   justify-content: flex-end !important;
 }
+
 .row-flex-left {
   display: flex !important;
   flex-direction: row !important;
@@ -72,57 +83,115 @@
   margin: -3px !important;
 }
 
-.margin-5{
-  margin: 5px!important;
+.margin-5 {
+  margin: 5px !important;
 }
-.margin-top-15{
+
+.margin-top-15 {
   margin-top: 15px !important;
 }
 
-.margin-top-30{
+.margin-top-30 {
   margin-top: 30px !important;
 }
-.margin-15{
-  margin: 15px!important;
+
+.margin-15 {
+  margin: 15px !important;
 }
-.margin-10{
-  margin: 10px!important;
+
+.margin-10 {
+  margin: 10px !important;
 }
-.margin-left-right-10{
-  margin-top: 5px!important;
-  margin-bottom: 0px!important;
-  margin-left: 10px!important;
-  margin-right: 10px!important;
+
+.margin-left-right-10 {
+  margin-top: 5px !important;
+  margin-bottom: 0px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
-.margin-padding-less{
-  padding: 0px!important;
+
+.margin-padding-less {
+  padding: 0px !important;
   margin: 0px !important;
 }
+
+.margin-auto {
+  margin: auto !important;
+}
+
 /* -------padding--------- */
-.padding-less{
-  padding: 0px!important;
+.padding-less {
+  padding: 0px !important;
+}
+
+.padding-title {
+  padding: 5px !important;
 }
 
 /* -------borderless--------- */
 .border-background-less {
-  background: #fff0!important;
-  border: none!important;
-  box-shadow: none!important;
-
+  background: #fff0 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
+
 /* -------激活状态样式--------- */
-.menu-active{
-  background-color: #D56464!important;
+.menu-active {
+  background-color: #D56464 !important;
+  color: #F3EEE5 !important;
+}
+
+.menu-active:hover {
+  background-color: #f46969 !important;
   color: #F3EEE5 !important;
 }
 
 /* -------全局设置--------- */
 /* 全局背景颜色 */
-body{
-  background-color: #E4E4E4!important;
+body {
+  background-color: #E4E4E4 !important;
 }
 
 /* -------top--------- */
-.about-avatar-top{
-  top: -20px!important;
+.about-avatar-top {
+  top: -20px !important;
 }
+
+/* -----------分类标签------------- */
+.category-tab {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-style: solid;
+  color: #434343 !important;
+  border-radius: 5px;
+  border-width: thin;
+  margin: 0px 8px 10px;
+  margin-bottom: 10px;
+  width: 135px;
+  overflow: hidden;
+  height: 30px;
+  text-align: center;
+}
+
+.category-tab:hover {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-style: solid;
+  color: #434343 !important;
+  border-radius: 5px;
+  border-width: thin;
+  margin: 0px 8px 10px;
+  margin-bottom: 10px;
+  width: 135px;
+  overflow: hidden;
+  height: 30px;
+  text-align: center;
+  background-color: #F4A81E;
+}
+
+/* ------分页栏------- */
+.pagination {}

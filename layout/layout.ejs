@@ -341,7 +341,7 @@
             <div class="five wide column">
               <div class="ui card margin-10">
                 <div class="image">
-                  <img class="ui small image" src="<%- url_for('/img/default.png') %>">
+                  <img class="ui small image" src="<%- url_for('/img/timg.jpg') %>">
                 </div>
               </div>
             </div>
@@ -499,10 +499,71 @@
           </div>
         </div>
         <!-- 列表填充 -->
+        <!-- 分页菜单 -->
+        <div class="ui borderless menu background-thin-yellow">
+          <a class="item">上一页</a>
+          <a class="item">1</a>
+          <a class="item">2</a>
+          <a class="item">3</a>
+          <a class="item">4</a>
+          <a class="item">5</a>
+          <a class="item">6</a>
+          <a class="item">下一页</a>
+        </div>
       </div>
+
+
       <!-- 侧边栏 -->
       <div class="five wide column">
-        <div class="ui segment"></div>
+        <div class="ui segment background-thin-yellow">
+          <div class="ui segment background-title-red padding-title">
+            <h4 class="header ">成就墙：</h4>
+          </div>
+          <p>这里是饼图文章统计，直观地展示文章的分类数目和其下的文章数~</p>
+        </div>
+
+
+        <div class="ui segment background-thin-yellow">
+          <div class="ui segment background-title-red padding-title">
+            <h4 class="header ">文章分类：</h4>
+          </div>
+          <div class="row-flex flex-wrap">
+            <a href="#" class="category-tab">数据结构与算法分析555555</a>
+            <a href="#" class="category-tab">计算机编程与网络</a>
+            <a href="#" class="category-tab">数据结构与算法分析</a>
+            <a href="#" class="category-tab">数据结构与算法分析</a>
+            <a href="#" class="category-tab">数据</a>
+            <a href="#" class="category-tab">数据结构</a>
+            <a href="#" class="category-tab">算法分析</a>
+          </div>
+        </div>
+
+        <div class="ui segment background-thin-yellow">
+          <div class="ui segment background-title-red padding-title">
+            <h4 class="header ">文章标签：</h4>
+          </div>
+          <div class="row-flex flex-wrap">
+            <a href="#" class="category-tab">数据结构与算法分析555555</a>
+            <a href="#" class="category-tab">计算机编程与网络</a>
+            <a href="#" class="category-tab">数据结构与算法分析</a>
+            <a href="#" class="category-tab">数据结构与算法分析</a>
+            <a href="#" class="category-tab">数据</a>
+            <a href="#" class="category-tab">数据结构</a>
+            <a href="#" class="category-tab">算法分析</a>
+          </div>
+        </div>
+
+        <div class="ui segment background-thin-yellow">
+          <div class="ui segment background-title-red padding-title">
+            <h4 class="header ">订阅作者：</h4>
+          </div>
+
+          <div class="ui card margin-auto">
+            <div class="image">
+              <img src="<%- url_for('/img/subscribe.jpg') %>">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
