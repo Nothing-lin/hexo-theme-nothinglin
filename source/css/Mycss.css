@@ -1,0 +1,48 @@
+/* -------background-colors--------- */
+.background-deep-green {
+  background-color: #216A63 !important;
+}
+
+/* -------font-colors--------- */
+.font-thin-yellow{
+  color: #F3EEE5 !important;
+}
+
+/* -------border--------- */
+.border-none {
+  border: none !important;
+}
+/* -------container--------- */
+.header-container{
+  width: 85% !important;
+}
+
+/* -------分割条--------- */
+.title-divider{
+  margin: 3px!important;
+}
+
+/* -------flex布局--------- */
+.row-flex{
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content: space-between!important;
+}
+.col-flex{
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: space-between!important;
+}
+.row-flex-right{
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content: flex-end!important;
+}
+
+/* -------margin--------- */
+.margin-left-5{
+  margin-left: 5px!important;
+}
+.margin-2{
+  margin: -3px!important;
+}
