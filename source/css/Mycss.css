@@ -7,6 +7,18 @@
   background-color: #F3EEE5 !important;
 }
 
+.background-thin-red{
+  background-color: #D56464!important;
+  color: white!important;
+  border-color: rgb(255 64 64 / 15%)!important;
+}
+
+.background-thin-red:hover{
+  background-color: #f46969!important;
+  color: white!important;
+  border-color: rgb(255 64 64 / 15%)!important;
+}
+
 /* -------font-colors--------- */
 .font-thin-yellow {
   color: #F3EEE5 !important;
@@ -45,6 +57,11 @@
   flex-direction: row !important;
   justify-content: flex-end !important;
 }
+.row-flex-left {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+}
 
 /* -------margin--------- */
 .margin-left-5 {
@@ -55,6 +72,32 @@
   margin: -3px !important;
 }
 
+.margin-5{
+  margin: 5px!important;
+}
+.margin-top-15{
+  margin-top: 15px !important;
+}
+
+.margin-top-30{
+  margin-top: 30px !important;
+}
+.margin-15{
+  margin: 15px!important;
+}
+.margin-10{
+  margin: 10px!important;
+}
+.margin-left-right-10{
+  margin-top: 5px!important;
+  margin-bottom: 0px!important;
+  margin-left: 10px!important;
+  margin-right: 10px!important;
+}
+.margin-padding-less{
+  padding: 0px!important;
+  margin: 0px !important;
+}
 /* -------padding--------- */
 .padding-less{
   padding: 0px!important;
@@ -77,4 +120,9 @@
 /* 全局背景颜色 */
 body{
   background-color: #E4E4E4!important;
+}
+
+/* -------top--------- */
+.about-avatar-top{
+  top: -20px!important;
 }
