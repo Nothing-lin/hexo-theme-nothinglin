@@ -1,15 +1,29 @@
 /* -------设置代码块的样式------- */
 .enlighter-default.enlighter-v-standard.enlighter-t-enlighter.enlighter-hover.enlighter-linenumbers.enlighter-overflow-scroll {
-  background-color: #F3EEE5;
-  border-style: dashed;
-  border-width: 3px;
+  background-color: #F5F2F0;
+  border-style: solid;
+  border-width: 2px;
 }
+
 .enlighter-t-enlighter.enlighter-linenumbers div.enlighter>div::before {
-    border-right: solid 1px #e0e0e0;
-    background-color: #F3EEE5!important;
+  border-right: solid 1px #e0e0e0;
+  background-color: #F5F2F0 !important;
 }
+
 div.enlighter {
-    margin: 10px!important;
+  margin: 10px !important;
+}
+
+.enlighter-t-enlighter.enlighter-v-inline {
+  border-radius: 3px;
+  background-color: #F5F2F0 !important;
+}
+
+.enlighter-t-enlighter.enlighter-v-inline {
+  margin-left: 5px;
+  top: -2px;
+  margin-right: 5px;
+  font-size: 14px;
 }
 
 /* -------滚动条相关------- */
@@ -17,4 +31,66 @@ div.enlighter {
   /*改变纵向滚动条宽度*/
   height: 0px;
   width: 10px;
+}
+
+.content img {
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  border-radius: .28571429rem;
+  margin: auto !important;
+  width: 100%;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+.content h3 {
+  background-color: #D56464;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  border-radius: .28571429rem;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  padding-left: 8px !important;
+}
+
+.content blockquote {
+  border-radius: 10px;
+  font-size: 1.4em;
+  width: 100%;
+  margin: 20px auto;
+  font-family: Open Sans;
+  color: #555;
+  padding: 15px 20px 15px 50px;
+  line-height: 1.6;
+  position: relative;
+  background: #F5F2F0;
+  text-align: justify;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  border-radius: .28571429rem;
+}
+
+.content blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #D56464;
+  font-size: 3.4em;
+  position: absolute;
+  left: 15px;
+  top: -10px;
+}
+
+.content ul {
+  border-left-color: #D56464;
+  border-left-width: 5px;
+  border-left-style: solid;
+  padding-left: 30px;
+}
+
+.content strong {
+  background-color: #D56464;
+  font-weight: normal;
+  padding: 1px 5px 1.5px 5px;
+  border-radius: 2px;
+  color: white;
 }

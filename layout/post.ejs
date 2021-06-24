@@ -1,6 +1,46 @@
 <!-- 文章列表 -->
 <div class="eleven wide column">
   <div class="ui segment background-thin-yellow content">
-    <%- page.content %>
+    <div class="ui segment background-thin-yellow border-background-less">
+      <div class="ui segment background-thin-yellow border-background-less">
+        <h2 class="ui center aligned icon header"><%- page.title %></h2>
+        <div class="ui segment background-thin-yellow border-background-less">
+          <!-- 文章info -->
+          <div class="row-flex-center">
+            <h5 class="header margin-left-right-10"><i class="address user icon"></i><%- page.author -%></h5>
+            <h5 class="header margin-left-right-10"><i class="address calendar alternate outline icon"></i><%- date(page.date,"YYYY年MM月DD日") %></h5>
+            <h5 class="header margin-left-right-10"><i class="address folder open outline icon"></i>
+              <% if(page.categories.length){ %>
+              <%- list_categories(page.categories, {
+          										show_count: false,
+          										style: 'none',
+          										separator: ' ， ',
+          										amount: 1
+          								}) %>
+              <% } else { %>
+              <%= '未分类' %>
+              <% } %></h5>
+            <h5 class="header margin-left-right-10"><i class="address tag icon"></i>
+              <% if(page.tags.length){ %>
+              <%- list_tags(page.tags, {
+          										show_count: false,
+          										style: 'none',
+          										separator: ' ， ',
+          										amount: 2
+          								}) %>
+              <% } else { %>
+              <%= '未设置标签' %>
+              <% } %></h5>
+          </div>
+        </div>
+        <!-- 分割线 -->
+        <div class="ui divider title-divider"></div>
+      </div>
+      <div class="ui segment background-thin-yellow content border-background-less top-15"> <%- page.content %></div>
+
+
+      <!-- 文章结尾处理 -->
+      <div class="ui divider title-divider"></div>
+    </div>
   </div>
 </div>

@@ -77,7 +77,12 @@
   flex-direction: row !important;
   justify-content: flex-start !important;
 }
-
+.row-flex-center {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+   flex-wrap:wrap!important;
+}
 /* -------margin--------- */
 .margin-left-5 {
   margin-left: 5px !important;
@@ -234,4 +239,8 @@ a:hover {
 .intro a {
   color: #000000de !important;
   text-decoration: none !important;
+}
+/* -----------top------------- */
+.top-15{
+  top:-15px!important;
 }
