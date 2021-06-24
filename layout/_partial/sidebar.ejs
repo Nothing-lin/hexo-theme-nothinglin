@@ -13,13 +13,9 @@
       <h4 class="header ">文章分类：</h4>
     </div>
     <div class="row-flex flex-wrap">
-      <a href="#" class="category-tab">数据结构与算法分析555555</a>
-      <a href="#" class="category-tab">计算机编程与网络</a>
-      <a href="#" class="category-tab">数据结构与算法分析</a>
-      <a href="#" class="category-tab">数据结构与算法分析</a>
-      <a href="#" class="category-tab">数据</a>
-      <a href="#" class="category-tab">数据结构</a>
-      <a href="#" class="category-tab">算法分析</a>
+      <% site.categories.each(function(item) { %>
+      <a href="<%- url_for(item.path) %>" class="category-tab"><%=item.name%></a>
+      <% }) %>
     </div>
   </div>
 
@@ -28,13 +24,9 @@
       <h4 class="header ">文章标签：</h4>
     </div>
     <div class="row-flex flex-wrap">
-      <a href="#" class="category-tab">数据结构与算法分析555555</a>
-      <a href="#" class="category-tab">计算机编程与网络</a>
-      <a href="#" class="category-tab">数据结构与算法分析</a>
-      <a href="#" class="category-tab">数据结构与算法分析</a>
-      <a href="#" class="category-tab">数据</a>
-      <a href="#" class="category-tab">数据结构</a>
-      <a href="#" class="category-tab">算法分析</a>
+      <% site.tags.each(function(item) { %>
+      <a href="<%- url_for(item.path) %>" class="category-tab"><%=item.name%></a>
+      <% }) %>
     </div>
   </div>
 
