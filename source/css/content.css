@@ -1,0 +1,20 @@
+/* -------设置代码块的样式------- */
+.enlighter-default.enlighter-v-standard.enlighter-t-enlighter.enlighter-hover.enlighter-linenumbers.enlighter-overflow-scroll {
+  background-color: #F3EEE5;
+  border-style: dashed;
+  border-width: 3px;
+}
+.enlighter-t-enlighter.enlighter-linenumbers div.enlighter>div::before {
+    border-right: solid 1px #e0e0e0;
+    background-color: #F3EEE5!important;
+}
+div.enlighter {
+    margin: 10px!important;
+}
+
+/* -------滚动条相关------- */
+.enlighter-default::-webkit-scrollbar {
+  /*改变纵向滚动条宽度*/
+  height: 0px;
+  width: 10px;
+}
