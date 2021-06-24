@@ -215,3 +215,23 @@ body {
   color: #F3EEE5;
   font-size: 16px !important;
 }
+
+/* -----修改semantic------ */
+.ui.label>a {
+  opacity: inherit !important;
+}
+
+a {
+  color: #000000de;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D56464;
+  text-decoration: none;
+}
+
+.intro a{
+  color: #000000de!important;
+  text-decoration: none!important;
+}
