@@ -77,12 +77,14 @@
   flex-direction: row !important;
   justify-content: flex-start !important;
 }
+
 .row-flex-center {
   display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
-   flex-wrap:wrap!important;
+  flex-wrap: wrap !important;
 }
+
 /* -------margin--------- */
 .margin-left-5 {
   margin-left: 5px !important;
@@ -240,7 +242,37 @@ a:hover {
   color: #000000de !important;
   text-decoration: none !important;
 }
+
 /* -----------top------------- */
-.top-15{
-  top:-15px!important;
+.top-15 {
+  top: -15px !important;
+}
+
+/* -------分页--------- */
+span.page-number.current {
+  padding: 10px 20px;
+}
+
+a.page-number {
+  padding: 9px 20px;
+}
+
+a.extend.next {
+  padding: 9px 20px;
+}
+
+a.extend.prev {
+  padding: 9px 20px;
+}
+
+a.page-number:hover {
+  background: rgba(0, 0, 0, .03);
+}
+
+a.extend.next:hover {
+  background: rgba(0, 0, 0, .03);
+}
+
+a.extend.prev:hover {
+  background: rgba(0, 0, 0, .03);
 }

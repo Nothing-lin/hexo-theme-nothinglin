@@ -100,18 +100,13 @@
         <% } %></h5>
     </div>
   </div>
-
   <% }) %>
 
   <!-- 分页菜单 -->
-  <div class="ui borderless menu background-thin-yellow">
-    <a class="item">上一页</a>
-    <a class="item">1</a>
-    <a class="item">2</a>
-    <a class="item">3</a>
-    <a class="item">4</a>
-    <a class="item">5</a>
-    <a class="item">6</a>
-    <a class="item">下一页</a>
+  <div class="ui borderless menu background-thin-yellow" role="navigation">
+    <%- paginator({
+                prev_text: "上一页",
+                next_text: "下一页"
+            }) %>
   </div>
 </div>
