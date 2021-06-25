@@ -41,6 +41,12 @@
 
       <!-- 文章结尾处理 -->
       <div class="ui divider title-divider"></div>
+      <%- list_categories(site.categories, {
+                      show_count: false,
+                      style: 'none',
+                      separator: ' ， ',
+                      amount: 1
+                  }) %>
     </div>
   </div>
 </div>
