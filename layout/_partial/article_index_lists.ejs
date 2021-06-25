@@ -102,6 +102,7 @@
   </div>
   <% }) %>
 
+  <% if (page.total > 1){ %>
   <!-- 分页菜单 -->
   <div class="ui borderless menu background-thin-yellow" role="navigation">
     <%- paginator({
@@ -109,4 +110,6 @@
                 next_text: "下一页"
             }) %>
   </div>
+
+  <% } %>
 </div>

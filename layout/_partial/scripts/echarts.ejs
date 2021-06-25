@@ -1,0 +1,34 @@
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script type="text/javascript">
+  var dom = document.getElementById("categories-echarts");
+  var myChart = echarts.init(dom);
+  var app = {};
+  var option;
+
+
+<!-- 核心关键 -->
+  <%
+  /* calculate categoriesOption data. */
+  var categoryArr = [];
+  site.categories.map(function(category) {
+      categoryArr.push({'name': category.name, 'value': category.length})
+  });
+
+  var categoryArrJson = JSON.stringify(categoryArr);
+  %>
+
+
+  option = {
+    series: [{
+      name: '分类统计',
+      type: 'pie',
+      radius: '55%',
+      data: <%- categoryArrJson %>
+    }],
+        tooltip: {}
+  };
+
+  if (option && typeof option === 'object') {
+    myChart.setOption(option);
+  }
+</script>
