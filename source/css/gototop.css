@@ -1,0 +1,128 @@
+.gototop {
+  display: none;
+  -webkit-animation: hide 350ms ease-out forwards 1;
+  animation: hide 350ms ease-out forwards 1;
+  border: 0;
+  text-align: center;
+  background-color:#D56464!important;
+  color: #494A5F;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  -webkit-transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.gototop:hover {
+  background-color: #f46969 !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.gototop>span {
+  display: inline-block;
+  -webkit-transition: transform 100ms 100ms ease-in-out;
+  transition: transform 100ms 100ms ease-in-out;
+}
+
+.gototop:hover,
+.gototop:focus {
+  background-color: #D5D6E2;
+}
+
+.gototop:hover>span,
+.gototop:focus>span {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.isvisible {
+  -webkit-animation: show 1s ease-out forwards 1;
+  animation: show 1s ease-out forwards 1;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  25% {
+    opacity: .5;
+    -webkit-transform: rotate(-3deg) translateY(-40px);
+  }
+
+  75% {
+    -webkit-transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  25% {
+    opacity: .5;
+    transform: rotate(-3deg) translateY(-40px);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    opacity: .5;
+    -webkit-transform: rotate(-3deg) translateY(-40px);
+  }
+
+  75% {
+    -webkit-transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    opacity: .5;
+    transform: rotate(-3deg) translateY(-40px);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
