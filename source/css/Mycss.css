@@ -309,3 +309,24 @@ a.extend.prev:hover {
   border-radius: 5px;
   padding: 5px;
 }
+
+/* --------字体大小---------- */
+.font-size-15 {
+  font-size: 13px !important;
+}
+
+.font-size-17 {
+  font-size: 17px !important;
+}
+
+/* -------archive页面设置-------- */
+.archive-span-date {
+  margin-right: 10px;
+}
+
+.archive-list {
+  list-style: none;
+}
+.archive-a{
+  color: #333333 !important;
+}

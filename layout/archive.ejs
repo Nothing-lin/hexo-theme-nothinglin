@@ -1,0 +1,20 @@
+<!-- 文章列表 -->
+<div class="eleven wide column">
+  <div class="ui segment background-thin-yellow">
+
+    <a class="ui background-thin-red ribbon label font-size-15">本站全部文章列表：</a>
+
+
+    <% site.posts.sort('date', 'desc').each(function(e){ %>
+    <ul class="font-size-17 archive-list">
+      <li class="margin-bottom-10">
+        <span class="archive-span-date">[<%- date(e.date,"YYYY/MM/DD") %>]</span>
+        <strong><a href="<%- url_for(e.path) %>"><%- e.title %></a></strong>
+      </li>
+      <!-- 分割线 -->
+      <div class="ui divider title-divider"></div>
+    </ul>
+    <% }) %>
+
+  </div>
+</div>

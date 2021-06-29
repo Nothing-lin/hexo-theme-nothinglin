@@ -5,7 +5,7 @@
     <div class="row-flex flex-wrap">
       <a href="<%- url_for('/categories') %>" class="tabs-nav  tabs-active">全部分类文章</a>
       <% site.categories.each(function(item) { %>
-      <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%></a>
+      <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%>(<%=item.length%>)</a>
       <% }) %>
       <a href="#" class="tabs-nav">工具分享</a>
       <a href="#" class="tabs-nav item">博客日记</a>
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <% page.posts.each(function(post){ %>
+  <% page.posts.sort('date', 'desc').each(function(post){ %>
   <!-- 列表栏 -->
   <!-- 文章列表 -->
   <div class="ui segment background-thin-yellow">

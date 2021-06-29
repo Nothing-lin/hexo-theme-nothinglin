@@ -1,7 +1,7 @@
 <!-- 文章列表 -->
 <div class="eleven wide column">
   <div class="ui segment background-thin-yellow">
-    <a class="ui background-thin-red ribbon label">关于博主：</a>
+    <a class="ui background-thin-red ribbon label font-size-15">关于博主：</a>
 
     <div class="ui grid">
       <div class="eleven wide column">
@@ -38,7 +38,7 @@
   </div>
 
 
-  <% page.posts.each(function(post){ %>
+  <% page.posts.sort('date', 'desc').each(function(post){ %>
   <!-- 文章列表 -->
   <div class="ui segment background-thin-yellow">
     <!-- 文章标题 -->
