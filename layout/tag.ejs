@@ -3,26 +3,10 @@
   <div class="ui segment background-thin-yellow">
     <!-- 标签栏 -->
     <div class="row-flex flex-wrap">
-      <a href="<%- url_for('/categories') %>" class="tabs-nav  tabs-active">全部分类文章</a>
+      <a href="<%- url_for('/categories') %>" class="tabs-nav  tabs-active">全部</a>
       <% site.tags.each(function(item) { %>
-      <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%>(<%=item.length%>)</a>
+      <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%> (<%=item.length%>)</a>
       <% }) %>
-      <a href="#" class="tabs-nav">工具分享</a>
-      <a href="#" class="tabs-nav item">博客日记</a>
-      <a href="#" class="tabs-nav">计算机网络编程</a>
-      <a href="#" class="tabs-nav">算法结构</a>
-      <a href="#" class="tabs-nav">创业日记</a>
-      <a href="#" class="tabs-nav">学习笔记</a>
-      <a href="#" class="tabs-nav">知识分享</a>
-      <a href="#" class="tabs-nav">知识总结</a>
-      <a href="#" class="tabs-nav">番外</a>
-      <a href="#" class="tabs-nav">那些年</a>
-      <a href="#" class="tabs-nav">我看过的书</a>
-      <a href="#" class="tabs-nav">101个创业故事</a>
-      <a href="#" class="tabs-nav">工具分享</a>
-      <a href="#" class="tabs-nav">工具分享</a>
-      <a href="#" class="tabs-nav">工具分享</a>
-      <a href="#" class="tabs-nav">工具分享</a>
     </div>
   </div>
 

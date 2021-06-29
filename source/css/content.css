@@ -81,10 +81,13 @@ div.enlighter {
 }
 
 .content ul {
-  border-left-color: #D56464;
-  border-left-width: 5px;
-  border-left-style: solid;
-  padding-left: 30px;
+  padding-left: 30px !important;
+  color: #939393;
+  border-radius: 8px;
+  border: solid 2px #e0e0e0;
+  padding: 15px;
+  background-color: #F5F2F0;
+  color: #777777 !important;
 }
 
 .content strong {

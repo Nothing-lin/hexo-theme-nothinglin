@@ -6,7 +6,7 @@
 
 
     <% site.posts.sort('date', 'desc').each(function(e){ %>
-    <ul class="font-size-17 archive-list">
+    <ul class="font-size-17 archive-list padding-right-40">
       <li class="margin-bottom-10">
         <span class="archive-span-date">[<%- date(e.date,"YYYY/MM/DD") %>]</span>
         <strong><a href="<%- url_for(e.path) %>"><%- e.title %></a></strong>

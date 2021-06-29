@@ -158,7 +158,9 @@
 .padding-title {
   padding: 5px !important;
 }
-
+.padding-right-40 {
+  padding-right: 40px !important;
+}
 /* -------borderless--------- */
 .border-background-less {
   background: #fff0 !important;

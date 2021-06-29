@@ -2,9 +2,8 @@
   top: 50px !important;
 }
 
-
-#local-search-input input{
-  width: 100%!important;
+#local-search-input input {
+  width: 100% !important;
 }
 
 .local-search {
@@ -32,6 +31,10 @@
   margin-bottom: 18px;
   padding: 10px;
   text-align: justify;
+  font-size: 16px;
+  background-color: #F5F2F0;
+  border-radius: 8px;
+  border: solid 2px #e0e0e0;
 }
 
 .overflow-y {
@@ -57,4 +60,13 @@
   color: #e58c7c;
   font-style: normal;
   font-weight: bold;
+}
+
+.search-title-background {
+  background-color: #216A63 !important;
+}
+
+.search-title-center {
+  text-align: center;
+  color: white !important;
 }
