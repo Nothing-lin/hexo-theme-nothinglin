@@ -8,7 +8,27 @@
       <a href="<%- url_for('/tags') %>" class="item">标签列表</a>
       <a href="#" class="item">资讯</a>
       <a href="#" class="item">留言</a>
-      <a href="" class="ui item right"><i class="icon search"></i></a>
+      <a href="" class="ui item right" id="nav-search"><i class="icon search"></i></a>
+    </div>
+  </div>
+  <!-- 搜索框的弹出内容 -->
+  <div class="ui modal">
+    <!-- 上半部分 -->
+    <div class="header">
+      <h3>搜索</h3>
+    </div>
+    <!-- 中部 -->
+    <div class="image local-search col-flex">
+      <div class="ui segment ">
+        <div class="ui action input row-flex">
+          <input type="text" placeholder="搜索..." id="local-search-input">
+          <button class="ui button" id="local-search-close">清空</button>
+        </div>
+        <div id="local-search-result" class="search-result overflow-y local-search col-flex"></div>
+      </div>
+    </div>
+    <div class="actions">
+      点击旁边阴影部分可以退出搜索
     </div>
   </div>
 </div>

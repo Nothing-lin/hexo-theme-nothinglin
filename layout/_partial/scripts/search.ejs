@@ -1,0 +1,17 @@
+<%- js('js/search.js') %>
+<script type="text/javascript">
+  //单击弹出窗口事件
+  $(document).ready(function() {
+    $("#nav-search").click(function() {
+      $('.ui.modal').modal('show');
+      event.preventDefault();
+    });
+    //搜索功能初始化
+    if ($('.local-search').length) {
+      $.getScript('/js/search.js', function() {
+        searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+      });
+    }
+  });
+
+</script>
