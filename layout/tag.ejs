@@ -1,0 +1,93 @@
+<!-- 文章列表 -->
+<div class="eleven wide column">
+  <div class="ui segment background-thin-yellow">
+    <!-- 标签栏 -->
+    <div class="row-flex flex-wrap">
+      <a href="<%- url_for('/categories') %>" class="tabs-nav  tabs-active">全部分类文章</a>
+      <% site.tags.each(function(item) { %>
+      <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%></a>
+      <% }) %>
+      <a href="#" class="tabs-nav">工具分享</a>
+      <a href="#" class="tabs-nav item">博客日记</a>
+      <a href="#" class="tabs-nav">计算机网络编程</a>
+      <a href="#" class="tabs-nav">算法结构</a>
+      <a href="#" class="tabs-nav">创业日记</a>
+      <a href="#" class="tabs-nav">学习笔记</a>
+      <a href="#" class="tabs-nav">知识分享</a>
+      <a href="#" class="tabs-nav">知识总结</a>
+      <a href="#" class="tabs-nav">番外</a>
+      <a href="#" class="tabs-nav">那些年</a>
+      <a href="#" class="tabs-nav">我看过的书</a>
+      <a href="#" class="tabs-nav">101个创业故事</a>
+      <a href="#" class="tabs-nav">工具分享</a>
+      <a href="#" class="tabs-nav">工具分享</a>
+      <a href="#" class="tabs-nav">工具分享</a>
+      <a href="#" class="tabs-nav">工具分享</a>
+    </div>
+  </div>
+
+  <% page.posts.each(function(post){ %>
+  <!-- 列表栏 -->
+  <!-- 文章列表 -->
+  <div class="ui segment background-thin-yellow">
+    <!-- 文章标题 -->
+    <div class="ui segment row-flex-left margin-padding-less border-background-less">
+
+      <h3 class="ui header margin-5">
+        <a href="<%- url_for(post.path) %>">
+          <%- truncate(post.title || '该文章无标题', {length: 27, omission: '...'}) %></a>
+      </h3>
+
+      <div class="ui background-thin-red label margin-5 font-white">
+        <% if(post.tags.length){ %>
+        <%- list_categories(post.categories, {
+                  show_count: false,
+                  style: 'none',
+                  separator: ' ',
+                  amount: 1
+              }) %>
+        <% } else { %>
+        <%= '未分类' %>
+        <% } %>
+      </div>
+    </div>
+    <!-- 文章内容简介 -->
+    <div class="ui grid">
+      <!-- 缩略图 -->
+      <div class="five wide column">
+        <div class="ui card margin-10">
+          <div class="image">
+            <img class="ui small image" src="<%- url_for('/img/default.png') %>">
+          </div>
+        </div>
+      </div>
+      <!-- 内容简介 -->
+      <div class="eleven wide column">
+        <div class="ui piled segment border-background-less intro">
+          <a href="<%- url_for(post.path) %>">
+            <p><%- truncate(strip_html(post.content),{length: 210,omission: '...'}) %>...</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 分割线 -->
+    <div class="ui divider title-divider"></div>
+    <!-- 文章info -->
+    <div class="row-flex-left">
+      <h5 class="header margin-left-right-10"><i class="address user icon"></i><%- post.author -%></h5>
+      <h5 class="header margin-left-right-10"><i class="address  calendar alternate outline icon"></i><%- date(post.date,"YYYY年MM月DD日") %></h5>
+      <h5 class="header margin-left-right-10"><i class="address  tag icon"></i>
+        <% if(post.tags.length){ %>
+        <%- list_tags(post.tags, {
+                          show_count: false,
+                          style: 'none',
+                          separator: ' ， ',
+                          amount: 3
+                      }) %>
+        <% } else { %>
+        <%= '空' %>
+        <% } %></h5>
+    </div>
+  </div>
+  <% }) %>
+</div>
