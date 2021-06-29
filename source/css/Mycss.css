@@ -114,6 +114,14 @@
   margin-bottom: 30 !important;
 }
 
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
 .margin-15 {
   margin: 15px !important;
 }
@@ -275,4 +283,29 @@ a.extend.next:hover {
 
 a.extend.prev:hover {
   background: rgba(0, 0, 0, .03);
+}
+
+/* ---------标签栏----------- */
+.tabs-nav {
+  padding: 5px;
+  margin: 3px;
+}
+
+.tabs-nav:hover {
+  background: rgba(0, 0, 0, .03);
+  border-radius: 5px;
+}
+
+.tabs-active {
+  background-color: #D56464 !important;
+  color: #F3EEE5 !important;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.tabs-active:hover {
+  background-color: #f46969 !important;
+  color: #F3EEE5 !important;
+  border-radius: 5px;
+  padding: 5px;
 }
