@@ -12,7 +12,7 @@
 
 
   <% site.categories.each(function(item){ %>
-  <% item.posts.each(function(e) { %>
+  <% item.posts.sort('date', 'desc').each(function(e) { %>
   <!-- 列表栏 -->
   <!-- 文章列表 -->
   <div class="ui segment background-thin-yellow">
