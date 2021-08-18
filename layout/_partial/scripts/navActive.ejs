@@ -1,0 +1,19 @@
+<!-- 这是nav菜单栏的选中状态代码 -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    // 获取导航栏中元素
+    let navs = document.querySelectorAll(".item");
+    // 获取当前页面中的地址
+    let pagePath = window.location.pathname;
+    for (let nav of navs) {
+      // 获取属性
+      let navPath = nav.getAttribute("data-path");
+      // alert(pagePath)
+      // console.log(nav.className)
+      if (navPath === pagePath) {
+        // console.log(pagePath)
+        nav.className = "item menu-active";
+      }
+    }
+  });
+</script>
