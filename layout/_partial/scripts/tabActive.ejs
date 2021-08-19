@@ -1,0 +1,16 @@
+<script type="text/javascript">
+  $(document).ready(function() {
+    // 获取导航栏中元素
+    let pagePath = window.location.href;
+    // alert(pagePath)
+    let tabs = document.querySelectorAll(".tabs-nav");
+    for (let tab of tabs) {
+      // console.log(nav.href);
+      let tabPath = tab.href;
+      if (tabPath === pagePath) {
+        // console.log(pagePath)
+        tab.className = "tabs-nav  tabs-active";
+      }
+    }
+  });
+</script>
