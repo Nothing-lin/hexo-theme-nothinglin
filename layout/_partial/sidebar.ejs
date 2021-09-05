@@ -1,5 +1,10 @@
 <!-- 侧边栏 -->
 <div class="five wide column">
+  <!-- 文章目录 -->
+  <% if(is_post()){ %>
+  <%- partial('_partial/toc') %>
+  <% } %>
+
   <div class="ui segment background-thin-yellow">
     <div class="ui segment background-title-red padding-title">
       <h4 class="header ">成就墙：</h4>
