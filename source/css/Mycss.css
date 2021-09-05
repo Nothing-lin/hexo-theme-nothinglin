@@ -158,9 +158,11 @@
 .padding-title {
   padding: 5px !important;
 }
+
 .padding-right-40 {
   padding-right: 40px !important;
 }
+
 /* -------borderless--------- */
 .border-background-less {
   background: #fff0 !important;
@@ -329,6 +331,31 @@ a.extend.prev:hover {
 .archive-list {
   list-style: none;
 }
-.archive-a{
+
+.archive-a {
   color: #333333 !important;
+}
+
+/* ----------侧边栏------------ */
+.article-toc {
+  position: sticky !important;
+  z-index: 99;
+  top: 20px;
+  max-height: 550px;
+}
+
+.container-toc {
+  overflow: hidden !important;
+  height: 470px !important;
+  overflow-y: auto !important;
+}
+
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0px;
+}
+
+ol.toc {
+    padding: initial;
+    padding-left: 20px;
 }

@@ -33,6 +33,10 @@ div.enlighter {
   width: 10px;
 }
 
+.container-toc.enlighter-default::-webkit-scrollbar{
+  width: 0px !important;
+}
+
 .content img {
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   border-radius: .28571429rem;
