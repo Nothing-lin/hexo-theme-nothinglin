@@ -346,7 +346,7 @@ a.extend.prev:hover {
 
 .container-toc {
   overflow: hidden !important;
-  height: 470px !important;
+  max-height: 470px !important;
   overflow-y: auto !important;
 }
 
