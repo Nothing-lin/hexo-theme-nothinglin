@@ -1,0 +1,39 @@
+<!-- 目录栏中滚动定位对应超链接 -->
+<script type="text/javascript">
+  //是否激活目录栏样式
+  function isActiveCatalog() {
+    //设置初始高度向下20
+    let offsetHeight = 20;
+
+    //获取当前页面滚动位置距离页面顶部的高度值***
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+    //hexo渲染的文章页面标题H1、2、····,它的类名是headerlink，获取该类名对应的文章标题标签、
+    let headerLinkList = document.getElementsByClassName("headerlink");
+
+    //hexo渲染生成的目录栏中，标题列表超链接的类名是toc-link获取其全部对应标签内容装进变量里
+    let catalogLinkList = document.getElementsByClassName("toc-link");
+
+    //获取目录栏中所有标题标签元素进行遍历判断与设定
+    for (let i = 0; i < catalogLinkList.length; i++) {
+      //定义这一个目录标题的高度，我也还不是很明白offsettop和scrollTop之间的区别
+      let currentTopCatalog = headerLinkList[i].offsetTop - offsetHeight;
+
+      //定义下一个目录标题的高度******
+      let nextTopCatalog = i + 1 === headerLinkList.length ? //判断这一个目录是不是最后一个标题，如果是就赋值无穷，不是就赋值下一个目录标题的高度
+        Infinity : headerLinkList[i + 1].offsetTop - offsetHeight;
+
+      //判断目录标题是不是为当前标题(设置当前目录标题为激活状态)**********
+      if (scrollTop >= currentTopCatalog && scrollTop < nextTopCatalog) {
+        catalogLinkList[i].className = "toc-link tabs-active"
+      } else {
+        catalogLinkList[i].className = "toc-link"
+      }
+
+    }
+
+  }
+
+  isActiveCatalog()
+  document.addEventListener("scroll", isActiveCatalog, false);
+</script>
