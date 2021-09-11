@@ -356,6 +356,42 @@ body ::-webkit-scrollbar {
 }
 
 ol.toc {
-    padding: initial;
-    padding-left: 20px;
+  padding: initial;
+  padding-left: 20px;
+}
+
+/* -----------目录栏样式----------------- */
+li.toc-item.toc-level-1 {
+    list-style: none;
+}
+ol.toc-child {
+    list-style: circle;
+}
+
+ol.toc {
+  padding-left: 10px !important;
+  padding-right: 10px;
+}
+
+span.toc-text {
+  font-size: 16px;
+}
+
+ol.toc-child {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+/* 使字体不自动换行 */
+.container-toc {
+    white-space: nowrap;
+}
+
+.toc-active{
+  color: #D56464;
+  font-weight: bold;
+
+}
+.toc-level-1 {
+    font-size: 5px;
 }
