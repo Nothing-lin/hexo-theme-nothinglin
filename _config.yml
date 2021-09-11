@@ -1,1 +1,9 @@
 
+# 文章评分系统
+ # widgetpack。将 false 改为 widgetpack 上的 id 则启用该评论系统。
+ # Star rating support to each article.
+ # To get your ID visit https://widgetpack.com
+widgetpack:
+  enable: true #false
+  id: 30332 #<app_id>
+  color:  fc6423

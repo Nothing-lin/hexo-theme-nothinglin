@@ -361,9 +361,8 @@ ol.toc {
 }
 
 /* -----------目录栏样式----------------- */
-
 ol.toc-child {
-    list-style: circle;
+  list-style: circle;
 }
 
 ol.toc {
@@ -380,16 +379,28 @@ ol.toc-child {
   padding-bottom: 5px;
   padding-left: 20px;
 }
+
 /* 使字体不自动换行 */
 .container-toc {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-.toc-active{
+.toc-active {
   color: #D56464;
   font-weight: bold;
-
 }
+
 .toc-level-1 {
-    font-size: 5px;
+  font-size: 5px;
+}
+
+/* --------文章评分功能--------- */
+.post-rating {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.extra-speaking {
+  font-style: italic;
+  color: gray;
 }
