@@ -361,15 +361,13 @@ ol.toc {
 }
 
 /* -----------目录栏样式----------------- */
-li.toc-item.toc-level-1 {
-    list-style: none;
-}
+
 ol.toc-child {
     list-style: circle;
 }
 
 ol.toc {
-  padding-left: 10px !important;
+  padding-left: 15px !important;
   padding-right: 10px;
 }
 

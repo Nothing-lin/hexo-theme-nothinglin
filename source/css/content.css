@@ -95,9 +95,8 @@ div.enlighter {
 }
 
 .content strong {
-  background-color: #D56464;
-  font-weight: normal;
+  font-weight: bold;
   padding: 1px 5px 1.5px 5px;
   border-radius: 2px;
-  color: white;
+  color: #d56464;
 }
