@@ -100,3 +100,9 @@ div.enlighter {
   border-radius: 2px;
   color: #d56464;
 }
+
+.page-prev-next{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

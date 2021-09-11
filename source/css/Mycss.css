@@ -404,3 +404,11 @@ ol.toc-child {
   font-style: italic;
   color: gray;
 }
+span.page-prev {
+    font-size: 16px;
+    font-weight: bold;
+}
+span.page-next {
+    font-size: 16px;
+    font-weight: bold;
+}

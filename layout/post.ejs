@@ -52,4 +52,26 @@
       </div>
     </div>
   </div>
+
+  <!-- 上一篇、下一篇 -->
+  <div class="ui segment background-thin-yellow content">
+    <div class="ui segment background-thin-yellow border-background-less page-prev-next">
+      <% if(page.prev){ %>
+      <a href="<%- url_for(page.prev.path) %>" title='<%- page.prev.title %>'>
+        <span class="page-prev">上一篇</span>
+      </a>
+      <% } %>
+
+      <% if(page.next){ %>
+      <a href="<%- url_for(page.next.path) %>" title='<%- page.next.title %>'>
+        <span class="page-next">下一篇</span>
+      </a>
+      <% } %>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
 </div>
