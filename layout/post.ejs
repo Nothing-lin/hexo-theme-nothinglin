@@ -71,6 +71,14 @@
     </div>
   </div>
 
+  <!-- 文章评论功能 -->
+  <div class="ui segment background-thin-yellow content">
+    <div class="ui segment background-thin-yellow border-background-less">
+      <!-- 评论系统 -->
+      <% if (theme.livere.enable && page.comments){ %>
+      <%- partial('_partial/widget/livere')%>
+      <% } %>
+
     </div>
   </div>
 

@@ -7,3 +7,10 @@ widgetpack:
   enable: true #false
   id: 30332 #<app_id>
   color:  fc6423
+
+
+# 来必力评论系统
+# livere配置
+livere:
+  enable: true
+  uid: MTAyMC81MzA1OS8yOTUzNQ==
