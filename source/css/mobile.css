@@ -1,0 +1,146 @@
+@media screen and (max-width:768px) {
+  .menu-button {
+    display: block !important;
+  }
+
+  .moblie-hide {
+    display: none !important;
+  }
+
+  a.item.menu-active {
+    display: none !important;
+  }
+
+  .content {
+    font-size: smaller;
+  }
+
+  h1.ui.header .sub.header {
+    font-size: 13px;
+  }
+
+  .right.floated.six.wide.column {
+    display: none;
+  }
+
+  .left.floated.six.wide.column {
+    text-align: center;
+  }
+
+  .row-flex-left {
+    display: block !important;
+  }
+
+  .gototop {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  i.big.icon, i.big.icons {
+    line-height: 1;
+    font-size: 20px;
+    margin-left: -3px;
+  }
+
+  .ui.card.margin-10 {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .ui.piled.segment.border-background-less.intro {
+    padding: 0;
+  }
+
+  .ui.piled.segment.border-background-less.intro {
+    overflow: hidden;
+    height: 97px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+  }
+
+  .ui.piled.segment.border-background-less.intro p {
+    color: #333333;
+  }
+
+  .category-tab {
+    width: 100%;
+  }
+
+  .ui.piled.segment.margin-top-15.border-background-less {
+    padding: 0;
+  }
+
+  .ui.container {
+    width: 100% !important;
+    margin-left: 0em !important;
+    margin-right: 0em !important;
+  }
+
+  .ui.segment {
+    width: 100% !important
+  }
+
+  .ui.segment.background-thin-yellow.border-background-less {
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .ui.segment.background-thin-yellow.article-toc {
+    display: none;
+  }
+
+  .category-tab:hover {
+    width: 100%;
+  }
+
+  ul.font-size-17.archive-list.padding-right-40 {
+    padding: 0 !important;
+    ;
+  }
+
+  .font-size-17 {
+    font-size: 14px !important;
+  }
+
+  .enlighter-default.enlighter-v-inline.enlighter-t-enlighter {
+    width: 100%;
+    margin: 5px 0px;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  h2.ui.header {
+    font-size: 18px;
+  }
+
+  h5.header.margin-left-right-10 {
+    font-size: 10px;
+  }
+
+  .ui.attached.segment {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .ui.segment.background-thin-yellow.border-background-less .ui.divider.title-divider {
+    padding: 10px !important;
+  }
+
+  .post-rating p {
+    text-align: center;
+  }
+  .ui.attached.segment {
+    border: none;
+}
+}

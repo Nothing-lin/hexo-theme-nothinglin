@@ -412,3 +412,12 @@ span.page-next {
     font-size: 16px;
     font-weight: bold;
 }
+
+
+/* ---------菜单按钮---------- */
+.menu-button:hover{
+  background-color: rgba(0,0,0,.03) !important;
+}
+.menu-button{
+  display: none !important;
+}

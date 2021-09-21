@@ -3,7 +3,7 @@
   <div class="ui segment background-thin-yellow">
     <a class="ui background-thin-red ribbon label font-size-15">关于博主：</a>
 
-    <div class="ui grid">
+    <div class="ui grid  stackable mobile reversed">
       <div class="eleven wide column">
         <!-- 介绍说明 -->
         <div class="ui piled segment  margin-top-15 border-background-less">
@@ -40,30 +40,29 @@
 
   <% page.posts.sort('date', 'desc').each(function(post){ %>
   <!-- 文章列表 -->
-  <div class="ui segment background-thin-yellow">
+  <div class="ui segment background-thin-yellow stackable ">
     <!-- 文章标题 -->
     <div class="ui segment row-flex-left margin-padding-less border-background-less">
 
       <h3 class="ui header margin-5">
         <a href="<%- url_for(post.path) %>">
           <%- truncate(post.title || '该文章无标题', {length: 27, omission: '...'}) %></a>
+          <div class="ui background-thin-red label margin-5 font-white">
+            <% if(post.categories.length){ %>
+            <%- list_categories(post.categories, {
+                      show_count: false,
+                      style: 'none',
+                      separator: ' ',
+                      amount: 1
+                  }) %>
+            <% } else { %>
+            <%= '未分类' %>
+            <% } %>
+          </div>
       </h3>
-
-      <div class="ui background-thin-red label margin-5 font-white">
-        <% if(post.categories.length){ %>
-        <%- list_categories(post.categories, {
-                  show_count: false,
-                  style: 'none',
-                  separator: ' ',
-                  amount: 1
-              }) %>
-        <% } else { %>
-        <%= '未分类' %>
-        <% } %>
-      </div>
     </div>
     <!-- 文章内容简介 -->
-    <div class="ui grid">
+    <div class="ui grid  stackable">
       <!-- 缩略图 -->
       <div class="five wide column">
         <div class="ui card margin-10">
