@@ -140,7 +140,28 @@
   .post-rating p {
     text-align: center;
   }
+
   .ui.attached.segment {
     border: none;
-}
+  }
+
+  li {
+    font-size: small;
+  }
+
+  .ui.segment.row-flex-left.margin-padding-less.border-background-less {
+    padding-bottom: 10px !important;
+  }
+
+  .author-index-info {
+    display: none;
+  }
+
+  p.search-result {
+    overflow: hidden;
+  }
+
+  .art-list {
+    top: -25px;
+  }
 }

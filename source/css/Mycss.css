@@ -421,3 +421,8 @@ span.page-next {
 .menu-button{
   display: none !important;
 }
+
+/* ------标题------ */
+a.title-href {
+    color: #F3EEE5;
+}
