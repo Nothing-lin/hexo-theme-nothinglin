@@ -64,7 +64,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 5
+  per_page: 20
   order_by: -date
 
 # Category & Tag
@@ -87,7 +87,7 @@ updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 5
+per_page: 20
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -104,10 +104,49 @@ theme: nothinglin
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
+  type: git
+  repo: git@github.com:Nothing-lin/blog.git
+  branch: master
 
 # hexo-generator-search站内搜索
 search:
   path: search.xml
   field: post
+
+  # 备份我的hexo博客
+backup:
+    type: git
+    theme: coolshell
+    repository:
+       github: git@github.com:Nothing-lin/blog.git,branchName
+
+# hexo-neat
+# md博文压缩
+neat_enable: true
+# 压缩html（ejs，swig等也属于html格式片段）
+neat_html:
+  enable: true
+  exclude:
+# 压缩css
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+    - '**/*.min.css'
+
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true #打印日志
+  output:
+  compress:
+  exclude: #排除文件
+    - '*.min.js'
+    - '**/*.min.js'
+
+
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
