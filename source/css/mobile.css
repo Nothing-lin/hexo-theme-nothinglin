@@ -164,4 +164,15 @@
   .art-list {
     top: -25px;
   }
+
+  i.black.sidebar.icon.top-left {
+    top: 12px !important;
+    right: 0;
+    position: absolute;
+    width: 40px;
+  }
+
+  .page-title {
+    color: #333333;
+  }
 }

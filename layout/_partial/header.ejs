@@ -4,9 +4,9 @@
     <div class="left floated six wide column">
       <h1 class="ui header font-thin-yellow">
         <div class="content">
-          <a href="/" class="title-href">Nothinglin的个人博客 </a>
+          <a href="/" class="title-href"><%=theme.blogTitle.bigtitle%></a>
           <div class="ui divider title-divider"></div>
-          <div class="sub header font-thin-yellow">不积跬步无以至千里，后继才能薄发</div>
+          <div class="sub header font-thin-yellow"><%=theme.blogTitle.subtitle%></div>
         </div>
       </h1>
     </div>
@@ -14,27 +14,42 @@
       <div class="ui content floated right">
         <div class="content ">
           <div class="sub header font-thin-yellow row-flex-right">
-            <a class="ui label margin-left-5">
+            <a href="#" class="ui label margin-left-5 wechat-link">
               <img class="margin-2" src="<%- url_for('/img/wechat.png') %>">
             </a>
-            <a class="ui label margin-left-5">
-              <img class="margin-2" src="<%- url_for('/img/weibo.png') %>">
-            </a>
-            <a class="ui label margin-left-5">
-              <img class="margin-2" src="<%- url_for('/img/zhihu.png') %>">
-            </a>
-            <a class="ui label margin-left-5">
-              <img class="margin-2" src="<%- url_for('/img/jianshu.png') %>">
-            </a>
-            <a class="ui label margin-left-5">
-              <img class="margin-2" src="<%- url_for('/img/github.png') %>">
-            </a>
-            <a class="ui label margin-left-5">
+            <div class="ui special popup">
+              <img src="<%=theme.shareHref.wechat%>" alt="加我微信">
+            </div>
+
+            <a href="#" class="ui label margin-left-5 public-link">
               <img class="margin-2" src="<%- url_for('/img/public.png') %>">
             </a>
-            <a class="ui label margin-left-5">
+            <div class="ui special popup">
+              <img src="<%=theme.shareHref.public%>" alt="加我微信">
+            </div>
+
+            <a href="<%=theme.shareHref.zhihu%>" class="ui label margin-left-5 zhihu-link">
+              <img class="margin-2" src="<%- url_for('/img/zhihu.png') %>">
+            </a>
+
+            <a href="<%=theme.shareHref.jianshu%>" class="ui label margin-left-5 jianshu-link">
+              <img class="margin-2" src="<%- url_for('/img/jianshu.png') %>">
+            </a>
+
+            <a href="<%=theme.shareHref.github%>" class="ui label margin-left-5 github-link">
+              <img class="margin-2" src="<%- url_for('/img/github.png') %>">
+            </a>
+
+
+            <a href="<%=theme.shareHref.weibo%>" class="ui label margin-left-5 weibo-link">
+              <img class="margin-2" src="<%- url_for('/img/weibo.png') %>">
+            </a>
+
+
+            <a href="<%=theme.shareHref.rss%>" class="ui label margin-left-5 rss-link">
               <img class="margin-2" src="<%- url_for('/img/rss.png') %>">
             </a>
+
           </div>
           <div class="ui divider title-divider"></div>
           <div class="sub header font-thin-yellow row-flex-right">
