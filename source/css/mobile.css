@@ -175,4 +175,8 @@
   .page-title {
     color: #333333;
   }
+
+  .ui.grid.stackable.footer-hide {
+      display: none;
+  }
 }

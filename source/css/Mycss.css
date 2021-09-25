@@ -225,7 +225,7 @@ body {
   overflow: hidden;
   height: 30px;
   text-align: center;
-  background-color: #F4A81E;
+  background-color: rgba(0,0,0,.03);
 }
 
 /* ------页脚------- */
@@ -425,4 +425,14 @@ span.page-next {
 /* ------标题------ */
 a.title-href {
     color: #F3EEE5;
+}
+
+/* 文章日历 */
+.eleven.wide.column.post-calendar {
+    margin-top: 10px;
+}
+
+#categories-echarts canvas {
+    left: 10px !important;
+    margin-left: -25px !important;
 }

@@ -1,7 +1,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <script type="text/javascript">
   var dom = document.getElementById("categories-echarts");
-  var myChart = echarts.init(dom);
+  var categoriesChart = echarts.init(dom);
   var app = {};
   var option;
 
@@ -25,10 +25,10 @@
       radius: '55%',
       data: <%- categoryArrJson %>
     }],
-        tooltip: {}
+      tooltip: {}
   };
 
   if (option && typeof option === 'object') {
-    myChart.setOption(option);
+    categoriesChart.setOption(option);
   }
 </script>
