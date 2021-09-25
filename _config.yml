@@ -1,50 +1,113 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-# 文章评分系统
- # widgetpack。将 false 改为 widgetpack 上的 id 则启用该评论系统。
- # Star rating support to each article.
- # To get your ID visit https://widgetpack.com
-widgetpack:
-  enable: true #false
-  id: 30332 #<app_id>
-  color:  fc6423
-
-# title
+# Site
 title: Nothinglin的个人博客
+subtitle: ''
+description: ''
+keywords:
+author: Nothinglin
+language: en
+timezone: ''
 
-# 来必力评论系统
-# livere配置
-livere:
-  enable: true
-  uid: MTAyMC81MzA1OS8yOTUzNQ==
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://example.com
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
-# 博客brand设置
-blogTitle:
-  bigtitle: "Nothinglin的个人博客"
-  subtitle: "不积跬步无以至千里，后继才能薄发"
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# 个人信息介绍栏
-aboutAuthor: "NothingLin的个人简介"
-AuthorInfo: "我是Nothinglin，目前还只是一名大三的学生，对未来充满了迷茫，不知所措。希望通过写博客的方式宣泄一下内心的迷茫。"
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
 
-# share
-shareHref:
-  wechat: /img/mywechat.jpg
-  public: /img/subscribe.jpg
-  zhihu: https://www.zhihu.com/people/nothing-86-28-47
-  jianshu: https://www.jianshu.com/u/a47e6b0d2a32
-  github: https://github.com/Nothing-lin
-  weibo:
-  rss:
 
-## Feed
-rss: /atom.xml
-## favicon
-favicon: /img/avatar.jpg
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: false
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: false
+  line_number: false
+  tab_replace: ''
 
-# 文章日历
-# Whether to display post-calender in the `archive` page
-# 设置在归档页面achive中是否显示'文章日历'控件
-# 仿GitHub贡献条
-postCalendar: true
-js:
-  echarts: https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 5
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 5
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: nothinglin
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: ''
+
+
+# hexo-generator-search站内搜索
+search:
+  path: search.xml
+  field: post

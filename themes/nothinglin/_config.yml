@@ -1,0 +1,50 @@
+
+# 文章评分系统
+ # widgetpack。将 false 改为 widgetpack 上的 id 则启用该评论系统。
+ # Star rating support to each article.
+ # To get your ID visit https://widgetpack.com
+widgetpack:
+  enable: true #false
+  id: 30332 #<app_id>
+  color:  fc6423
+
+# title
+title: Nothinglin的个人博客
+
+# 来必力评论系统
+# livere配置
+livere:
+  enable: true
+  uid: MTAyMC81MzA1OS8yOTUzNQ==
+
+# 博客brand设置
+blogTitle:
+  bigtitle: "Nothinglin的个人博客"
+  subtitle: "不积跬步无以至千里，后继才能薄发"
+
+# 个人信息介绍栏
+aboutAuthor: "NothingLin的个人简介"
+AuthorInfo: "我是Nothinglin，目前还只是一名大三的学生，对未来充满了迷茫，不知所措。希望通过写博客的方式宣泄一下内心的迷茫。"
+
+# share
+shareHref:
+  wechat: /img/mywechat.jpg
+  public: /img/subscribe.jpg
+  zhihu: https://www.zhihu.com/people/nothing-86-28-47
+  jianshu: https://www.jianshu.com/u/a47e6b0d2a32
+  github: https://github.com/Nothing-lin
+  weibo:
+  rss:
+
+## Feed
+rss: /atom.xml
+## favicon
+favicon: /img/avatar.jpg
+
+# 文章日历
+# Whether to display post-calender in the `archive` page
+# 设置在归档页面achive中是否显示'文章日历'控件
+# 仿GitHub贡献条
+postCalendar: true
+js:
+  echarts: https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js
