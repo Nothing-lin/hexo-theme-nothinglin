@@ -1,0 +1,12 @@
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- 实现fancybox的脚本 -->
+ <script type="text/javascript">
+   // 集成fancybox, 为所有img元素添加父元素
+   $("p img").each(function () {
+      // $(this).attr("data-fancybox", "gallery"); 直接给img添加data-fancybox会导致点击图片后图片消失
+       var element = document.createElement("a");
+       $(element).attr("data-fancybox", "gallery");
+       $(element).attr("href", $(this).attr("src"));
+       $(this).wrap(element);
+   });
+ </script>
