@@ -26,7 +26,7 @@
 
 安装好之后的目录结构如下：
 
-![image-20211115161927109](D:\工作区\typora截图\image-20211115161927109.png)
+![image-20211115161927109](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/11/15/20211115164504.png)
 
 
 
