@@ -1,6 +1,7 @@
 # hexo-theme-nothinglin主题
 
 <br/>
+
 ## 博客主题预览
 
 ![image-20211115161044091](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/11/15/20211115163414.png)
@@ -19,6 +20,7 @@
 
 <br/>
 <br/>
+
 ## 主题使用
 
 > GitHub：https://github.com/Nothing-lin/hexo-theme-nothinglin/tree/main
@@ -35,6 +37,7 @@
 
 <br/>
 <br/>
+
 ## 说明几点：
 
 **一、直接下载themes主题文件夹放到自己的主题文件夹中，然后在_config.yml文件夹下映射主题路径可以吗？**
@@ -51,6 +54,7 @@ next主题就做得很好，它的配置文件可以做到很个性化设置，�
 
 <br/>
 <br/>
+
 ## 公众号：苦逼的学生仔
 
 我目前还是一名学生菜鸡，如果喜欢这款主题的话，可以提交push参与改进，我现在的能力也有限，我目前做到这里已经是我最大的能力范围内了。
