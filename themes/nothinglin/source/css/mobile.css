@@ -179,4 +179,25 @@
   .ui.grid.stackable.footer-hide {
       display: none;
   }
+
+  .content h1 {
+      border-bottom-width: 4px;
+      border-bottom-color: #D56464;
+      border-bottom-style: solid;
+      border-radius: 1.285714rem;
+      padding: 5px;
+      color: #333333;
+      font-size: 17px;
+      padding-left: 8px!important;
+      margin-bottom: 35px;
+  }
+  .content h2 {
+      font-size: 15px;
+      margin-top: 45px;
+      border-bottom-style: solid;
+      border-bottom-width: 0.5px;
+      border-bottom-color: #d2d2d2;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+  }
 }

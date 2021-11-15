@@ -20,8 +20,8 @@
     <div class="ui segment row-flex-left margin-padding-less border-background-less">
 
       <h3 class="ui header margin-5">
-        <a href="<%- url_for(e.path) %>">
-          <%- truncate(e.title || '该文章无标题', {length: 27, omission: '...'}) %></a>
+        <a href="<%- url_for(e.path) %>" title="<%- e.title %>">
+          <%- truncate(e.title || '该文章无标题', {length: 70, omission: '...'}) %></a>
       </h3>
 
       <div class="ui background-thin-red label margin-5 font-white">

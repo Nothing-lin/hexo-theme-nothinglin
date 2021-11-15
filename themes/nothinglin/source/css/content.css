@@ -49,14 +49,26 @@ div.enlighter {
 }
 
 .content h1 {
-  background-color: #D56464;
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-  border-radius: .28571429rem;
-  padding: 5px;
-  color: white;
-  font-size: 16px;
-  padding-left: 8px !important;
+    border-bottom-width: 4px;
+    border-bottom-color: #D56464;
+    border-bottom-style: solid;
+    border-radius: 1.285714rem;
+    padding: 5px;
+    color: #333333;
+    font-size: 25px;
+    padding-left: 8px!important;
+    margin-bottom: 35px;
 }
+.content h2 {
+    font-size: 22px;
+    margin-top: 45px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #d2d2d2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
 
 .content blockquote {
   border-radius: 10px;
