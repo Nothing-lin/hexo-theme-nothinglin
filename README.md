@@ -4,13 +4,7 @@
 
 ## 博客主题预览
 
-![image-20211115161044091](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/11/15/20211115163414.png)
-
-![image-20211115161121648](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/11/15/20211115163421.png)
-
-![image-20211115161204250](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/11/15/20211115163427.png)
-
-![image-20211115161331069](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/11/15/20211115163432.png)
+![smartmockups_kw0gxz44](https://i.loli.net/2021/11/15/b9c2y3Oz4RTo56U.jpg)
 
 
 
@@ -20,6 +14,8 @@
 
 <br/>
 <br/>
+
+
 
 ## 主题使用
 
@@ -61,4 +57,4 @@ next主题就做得很好，它的配置文件可以做到很个性化设置，�
 
 之前一直没有找到过一款称心的主题，折腾了很久之后才开始决定自己开发一套自己喜欢的博客主题，以为把博客搞出来之后会认真写博客，后来才发现是写博客才是真的难！慢慢来吧
 
-![img](https://www.nothinglin.ml/img/subscribe.jpg)
+<img src="https://www.nothinglin.ml/img/subscribe.jpg" alt="img" style="zoom: 50%;" />
