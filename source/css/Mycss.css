@@ -436,3 +436,15 @@ a.title-href {
     left: 10px !important;
     margin-left: -25px !important;
 }
+
+/* -----友链资讯----- */
+.article-sort-item {
+    padding: 10px;
+    background-color: #f5f2f0;
+}
+.article-sort-item-time {
+    /* top: -2px; */
+    margin-top: -20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
