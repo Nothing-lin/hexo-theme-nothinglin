@@ -225,7 +225,7 @@ body {
   overflow: hidden;
   height: 30px;
   text-align: center;
-  background-color: rgba(0,0,0,.03);
+  background-color: rgba(0, 0, 0, .03);
 }
 
 /* ------页脚------- */
@@ -404,47 +404,63 @@ ol.toc-child {
   font-style: italic;
   color: gray;
 }
+
 span.page-prev {
-    font-size: 16px;
-    font-weight: bold;
-}
-span.page-next {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 
+span.page-next {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 /* ---------菜单按钮---------- */
-.menu-button:hover{
-  background-color: rgba(0,0,0,.03) !important;
+.menu-button:hover {
+  background-color: rgba(0, 0, 0, .03) !important;
 }
-.menu-button{
+
+.menu-button {
   display: none !important;
 }
 
 /* ------标题------ */
 a.title-href {
-    color: #F3EEE5;
+  color: #F3EEE5;
 }
 
 /* 文章日历 */
 .eleven.wide.column.post-calendar {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #categories-echarts canvas {
-    left: 10px !important;
-    margin-left: -25px !important;
+  left: 10px !important;
+  margin-left: -25px !important;
 }
 
 /* -----友链资讯----- */
 .article-sort-item {
-    padding: 10px;
-    background-color: #f5f2f0;
+  padding: 10px;
+  background-color: #f5f2f0;
 }
+
 .article-sort-item-time {
-    /* top: -2px; */
-    margin-top: -20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  /* top: -2px; */
+  margin-top: -20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ui.slide.reveal:hover>.visible.content {
+  -webkit-transform: translateX(-100%) !important;
+  transform: translateX(-110%) !important;
+}
+
+.ui.slide.reveal>.hidden.content {
+  position: absolute !important;
+  left: 4px !important;
+  width: 95% !important;
+  -webkit-transform: translateX(100%) !important;
+  transform: translateX(100%) !important;
 }

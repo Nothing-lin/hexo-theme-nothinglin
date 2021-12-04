@@ -45,7 +45,14 @@ div.enlighter {
 }
 
 .content p {
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.post-rating p {
+    font-size: 16px;
+    text-align: center;
 }
 
 .content h1 {
