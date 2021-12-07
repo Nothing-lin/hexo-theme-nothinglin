@@ -75,8 +75,13 @@
   <div class="ui segment background-thin-yellow content">
     <div class="ui segment background-thin-yellow border-background-less">
       <!-- 评论系统 -->
+      <!-- 来必力 -->
       <% if (theme.livere.enable && page.comments){ %>
       <%- partial('_partial/widget/livere')%>
+      <% } %>
+      <!-- twikoo -->
+      <% if (theme.twikoo.enable && page.comments){ %>
+      <%- partial('_partial/widget/twikoo')%>
       <% } %>
 
     </div>

@@ -14,8 +14,16 @@ title: Nothinglin的个人博客
 # 来必力评论系统
 # livere配置
 livere:
-  enable: true
+  enable: false
   uid: MTAyMC81MzA1OS8yOTUzNQ==
+
+# Twikoo
+# 基于腾讯云开发
+# Based on Tencent CloudBase
+# See: https://twikoo.js.org
+twikoo:
+  enable: true
+  envId: https://twikoo-nine-lemon.vercel.app
 
 # 博客brand设置
 blogTitle:
