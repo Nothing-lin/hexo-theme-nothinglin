@@ -9,6 +9,7 @@
           <div class="row-flex-center">
             <h5 class="header margin-left-right-10"><i class="address user icon"></i><%- page.author -%></h5>
             <h5 class="header margin-left-right-10"><i class="address calendar alternate outline icon"></i><%- date(page.date,"YYYY年MM月DD日") %></h5>
+            <h5 class="header margin-left-right-10"><i class="address eye icon"></i><span id="twikoo_visitors">0</span></h5>
             <h5 class="header margin-left-right-10"><i class="address folder open outline icon"></i>
               <% if(page.categories.length){ %>
               <%- list_categories(page.categories, {

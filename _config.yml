@@ -23,7 +23,7 @@ livere:
 # See: https://twikoo.js.org
 twikoo:
   enable: true
-  envId: https://twikoo-nine-lemon.vercel.app
+  envId: https://www.nothinglin-twikoo.ml
 
 # 博客brand设置
 blogTitle:
