@@ -84,7 +84,7 @@ div.enlighter {
   margin: 20px auto;
   font-family: Open Sans;
   color: #555;
-  padding: 15px 20px 15px 50px;
+  padding: 15px 20px 15px 20px;
   line-height: 1.6;
   position: relative;
   background: #F5F2F0;
@@ -95,7 +95,6 @@ div.enlighter {
 
 .content blockquote::before {
   font-family: Arial;
-  content: "\201C";
   color: #D56464;
   font-size: 3.4em;
   position: absolute;

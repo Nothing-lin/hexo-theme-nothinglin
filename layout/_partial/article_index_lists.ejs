@@ -44,7 +44,7 @@
 
       <h3 class="ui header margin-5">
         <a href="<%- url_for(post.path) %>">
-          <%- truncate(post.title || '该文章无标题', {length: 27, omission: '...'}) %></a>
+          <%- truncate(post.title || '该文章无标题', {length: 100, omission: '...'}) %></a>
           <div class="ui background-thin-red label margin-5 font-white">
             <% if(post.categories.length){ %>
             <%- list_categories(post.categories, {
