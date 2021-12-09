@@ -522,3 +522,34 @@ textarea#neirong {
 #artitalk_main .artitalk_avatar {
   border-radius: 0px !important;
 }
+
+li.px1.pb2.flex.items-center {
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  margin-bottom: 15px !important;
+  border-bottom: 1px solid rgba(34, 36, 38, .15) !important;
+  padding-bottom: 15px !important;
+}
+
+.flex.justify-between {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.w100 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.h5.list-comcontent.overflow-hidden {
+  max-height: 40px !important;
+  overflow: hidden !important;
+  margin-top: 10px !important;
+}
+
+div#hot-comments {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
