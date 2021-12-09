@@ -23,7 +23,15 @@ livere:
 # See: https://twikoo.js.org
 twikoo:
   enable: true
-  envId: https://www.nothinglin-twikoo.ml
+  envId: https://www.nothinglintwikoo.ml/
+
+# tawk在线聊天系统
+tawk:
+  enable: true
+
+# tawk在线聊天系统
+tidio:
+  enable: false
 
 # 博客brand设置
 blogTitle:
