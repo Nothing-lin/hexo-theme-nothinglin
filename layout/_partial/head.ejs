@@ -14,4 +14,8 @@
   <%- css('css/search.css') %>
   <%- css('css/mobile.css') %>
   <%- partial('_partial/title') %>
+  
+  <% if (theme.chatra.enable){ %>
+  <%- partial('_partial/scripts/chatra') %>
+  <% } %>
 </head>

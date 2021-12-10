@@ -27,11 +27,15 @@ twikoo:
 
 # tawk在线聊天系统
 tawk:
-  enable: true
+  enable: false
 
-# tawk在线聊天系统
+# tidio在线聊天系统
 tidio:
   enable: false
+
+# Chatra在线聊天系统
+chatra:
+  enable: true
 
 # 博客brand设置
 blogTitle:

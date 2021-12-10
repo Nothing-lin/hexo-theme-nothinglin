@@ -34,6 +34,7 @@
   .gototop {
     width: 30px !important;
     height: 30px !important;
+    left: 25px !important;
   }
 
   i.big.icon, i.big.icons {

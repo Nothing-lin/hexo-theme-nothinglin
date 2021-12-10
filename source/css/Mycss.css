@@ -553,3 +553,13 @@ div#hot-comments {
   padding-left: 5px !important;
   padding-right: 5px !important;
 }
+
+div#artitalk_main {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+div#artitalk_part1 {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
