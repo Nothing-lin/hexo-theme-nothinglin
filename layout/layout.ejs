@@ -26,6 +26,8 @@
   <%- partial('_partial/scripts/mobileMenuButton') %>
   <%- partial('_partial/scripts/handerShare') %>
   <%- partial('_partial/scripts/fancybox') %>
+
+  <!-- 朋友圈功能 -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
   <%- js('js/request.js') %>
 
@@ -36,6 +38,8 @@
   <% if (theme.tawk.enable){ %>
   <%- partial('_partial/scripts/tawk') %>
   <% } %>
+
+  <%- js('js/countdown.js') %>
 
 </body>
 
