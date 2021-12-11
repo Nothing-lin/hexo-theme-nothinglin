@@ -563,3 +563,13 @@ div#artitalk_part1 {
   display: flex !important;
   flex-direction: column-reverse !important;
 }
+
+.counter-img {
+  height: 18px;
+  margin-left: 1px;
+  margin-right: 5px;
+}
+
+.counter-a{
+  vertical-align: middle;
+}
