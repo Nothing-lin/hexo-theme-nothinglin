@@ -19,7 +19,8 @@
     </div>
 
     <%- partial('_partial/widget/countdowntimer') %>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_bmfjctya.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
   </div>
 
   <div class="ui segment background-thin-yellow">
@@ -38,7 +39,7 @@
       <% site.categories.each(function(item) { %>
       <a href="<%- url_for(item.path) %>" class="category-tab"><%=item.name%></a>
       <% }) %>
-      <a class="category-tab" id="category-next" style="background:#F4A81E">更多</a>
+      <a class="category-tab" id="category-next"><i class="angle double right icon"></i>更多</a>
     </div>
   </div>
 
@@ -50,7 +51,7 @@
       <% site.tags.each(function(item) { %>
       <a href="<%- url_for(item.path) %>" class="category-tab"><%=item.name%></a>
       <% }) %>
-      <a class="category-tab" id="tab-next" style="background:#F4A81E">更多</a>
+      <a class="category-tab" id="tab-next"><i class="angle double right icon"></i>更多</a>
     </div>
   </div>
 

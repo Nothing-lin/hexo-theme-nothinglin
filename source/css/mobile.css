@@ -225,4 +225,8 @@
   body.awesome-iframe {
     display: none;
   }
+
+    .image-effect-fall-back {
+      display: none;
+  }
 }
