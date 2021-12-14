@@ -34,10 +34,11 @@
     <div class="ui segment background-title-red padding-title">
       <h4 class="header ">文章分类：</h4>
     </div>
-    <div class="row-flex flex-wrap">
+    <div class="row-flex flex-wrap categories-lists">
       <% site.categories.each(function(item) { %>
       <a href="<%- url_for(item.path) %>" class="category-tab"><%=item.name%></a>
       <% }) %>
+      <a class="category-tab" id="category-next" style="background:#F4A81E">更多</a>
     </div>
   </div>
 
@@ -45,10 +46,11 @@
     <div class="ui segment background-title-red padding-title">
       <h4 class="header ">文章标签：</h4>
     </div>
-    <div class="row-flex flex-wrap">
+    <div class="row-flex flex-wrap tabs-lists">
       <% site.tags.each(function(item) { %>
       <a href="<%- url_for(item.path) %>" class="category-tab"><%=item.name%></a>
       <% }) %>
+      <a class="category-tab" id="tab-next" style="background:#F4A81E">更多</a>
     </div>
   </div>
 

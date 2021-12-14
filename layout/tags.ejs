@@ -2,11 +2,12 @@
 <div class="eleven wide column">
   <div class="ui segment background-thin-yellow">
     <!-- 标签栏 -->
-    <div class="row-flex flex-wrap">
+    <div class="row-flex flex-wrap tag2-lists">
       <a href="/tags/" class="tabs-nav">全部</a>
       <% site.tags.each(function(item) { %>
       <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%> (<%=item.length%>)</a>
       <% }) %>
+      <a class="tabs-nav" id="tag2-next">展开更多</a>
     </div>
   </div>
 

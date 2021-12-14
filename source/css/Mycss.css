@@ -293,6 +293,7 @@ a.extend.prev:hover {
 .tabs-nav {
   padding: 5px;
   margin: 3px;
+  border-radius: 5px;
 }
 
 .tabs-nav:hover {
@@ -570,6 +571,14 @@ div#artitalk_part1 {
   margin-right: 5px;
 }
 
-.counter-a{
+.counter-a {
   vertical-align: middle;
+}
+
+a#tab-next:hover {
+  background: rgb(244 168 30 / 68%) !important;
+}
+
+a#category-next:hover {
+  background: rgb(244 168 30 / 68%) !important;
 }
