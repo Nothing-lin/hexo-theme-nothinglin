@@ -43,6 +43,7 @@
 
 .search-result {
   max-height: 500px;
+  overflow: hidden;
 }
 
 .search-result-title {
