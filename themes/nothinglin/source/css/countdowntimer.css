@@ -1,0 +1,55 @@
+.countdowntimer {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 25px;
+}
+
+.title #desc {
+  margin: 25px 0 25px 0;
+  text-align: center;
+  color: lightyellow;
+  font-size: 18px;
+}
+
+.title #head {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+ul#countdown {
+  text-align: center;
+  padding-left: 0px !important;
+}
+
+ul#countdown li {
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  width: 65px;
+  height: 90px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #D56464;
+  -webkit-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+  box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+}
+
+ul#countdown li span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+  top: -5px;
+}
+
+ul#countdown li p.timeRefDays,
+ul#countdown li p.timeRefHours,
+ul#countdown li p.timeRefMinutes,
+ul#countdown li p.timeRefSeconds {
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+  margin-top: 15px;
+}

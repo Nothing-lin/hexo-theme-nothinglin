@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="code-QpDx1FbiMJ" />
+  <meta name="google-site-verification" content="c91EDLgHVQ1hJFAiUgB_mnezATbXBq1N9pXmCQQP85k" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- semantic UI 样式资源 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
@@ -13,5 +15,12 @@
   <%- css('css/gototop.css') %>
   <%- css('css/search.css') %>
   <%- css('css/mobile.css') %>
+  <%- css('css/countdowntimer.css') %>
+
+
   <%- partial('_partial/title') %>
+
+  <% if (theme.chatra.enable){ %>
+  <%- partial('_partial/scripts/chatra') %>
+  <% } %>
 </head>

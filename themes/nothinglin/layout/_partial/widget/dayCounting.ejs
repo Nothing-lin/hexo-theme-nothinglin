@@ -1,0 +1,21 @@
+本博客已运行:<span id=span_dt_dt ></span>天了
+<script language=javascript>
+  function show_date_time() {
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay = new Date("5/2/2021 22:22:45");
+    today = new Date();
+    timeold = (today.getTime() - BirthDay.getTime());
+    sectimeold = timeold / 1000
+    secondsold = Math.floor(sectimeold);
+    msPerDay = 24 * 60 * 60 * 1000
+    e_daysold = timeold / msPerDay
+    daysold = Math.floor(e_daysold);
+    e_hrsold = (e_daysold - daysold) * 24;
+    hrsold = Math.floor(e_hrsold);
+    e_minsold = (e_hrsold - hrsold) * 60;
+    minsold = Math.floor((e_hrsold - hrsold) * 60);
+    seconds = Math.floor((e_minsold - minsold) * 60);
+    span_dt_dt.innerHTML = '<font style=color:#f3eee5>' + daysold + '</font> 天 <font style=color:#f3eee5>' + hrsold + '</font> 时 <font style=color:#f3eee5>' + minsold + '</font> 分 <font style=color:#f3eee5>' + seconds + '</font> 秒';
+  }
+  show_date_time();
+</script>

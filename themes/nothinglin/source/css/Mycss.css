@@ -225,7 +225,7 @@ body {
   overflow: hidden;
   height: 30px;
   text-align: center;
-  background-color: rgba(0,0,0,.03);
+  background-color: rgba(0, 0, 0, .03);
 }
 
 /* ------页脚------- */
@@ -404,35 +404,283 @@ ol.toc-child {
   font-style: italic;
   color: gray;
 }
+
 span.page-prev {
-    font-size: 16px;
-    font-weight: bold;
-}
-span.page-next {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 
+span.page-next {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 /* ---------菜单按钮---------- */
-.menu-button:hover{
-  background-color: rgba(0,0,0,.03) !important;
+.menu-button:hover {
+  background-color: rgba(0, 0, 0, .03) !important;
 }
-.menu-button{
+
+.menu-button {
   display: none !important;
 }
 
 /* ------标题------ */
 a.title-href {
-    color: #F3EEE5;
+  color: #F3EEE5;
 }
 
 /* 文章日历 */
 .eleven.wide.column.post-calendar {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #categories-echarts canvas {
-    left: 10px !important;
-    margin-left: -25px !important;
+  left: 10px !important;
+  margin-left: -25px !important;
+}
+
+/* -----友链资讯----- */
+.article-sort-item {
+  padding: 10px;
+  background-color: #f5f2f0;
+}
+
+.article-sort-item-time {
+  /* top: -2px; */
+  margin-top: -20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ui.slide.reveal:hover>.visible.content {
+  -webkit-transform: translateX(-100%) !important;
+  transform: translateX(-110%) !important;
+}
+
+.ui.slide.reveal>.hidden.content {
+  position: absolute !important;
+  left: 4px !important;
+  width: 95% !important;
+  -webkit-transform: translateX(100%) !important;
+  transform: translateX(100%) !important;
+}
+
+/* 说说样式魔改 */
+#artitalk_main .shuoshuo_author_img img {
+  width: 55px;
+  height: 55px;
+}
+
+#artitalk_main .cbp_tmtimeline>li .cbp_tmlabel {
+  background: #f5f2f0 !important;
+  box-shadow: rgb(0 0 0 / 7%) 0px 2px 2px 0px, rgb(0 0 0 / 10%) 0px 1px 5px 0px !important;
+}
+
+#artitalk_main .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+  border-right-color: #f5f2f0 !important;
+  display: none;
+}
+
+#artitalk_main .cbp_tmtimeline>li:nth-child(even) .cbp_tmlabel:after {
+  border-right-color: #f5f2f0 !important;
+  display: none;
+}
+
+#artitalk_main .cbp_tmtimeline {
+  display: contents !important;
+}
+
+#artitalk_main .cbp_tmtimeline p {
+  color: #333333 !important;
+  font-weight: 400 !important;
+}
+
+#operare_artitalk .at_button, #artitalk_main .at_button {
+  background-color: #D56464 !important;
+}
+
+#artitalk_main #lazy {
+  background: rgb(34 36 38 / 0%) !important;
+}
+
+div#artitalk_main {
+  margin-top: 25px !important;
+}
+
+#artitalk_main p.shuoshuo_time {
+  border-top: 1px dashed #333333 !important;
+}
+
+textarea#neirong {
+  background-image: none !important;
+}
+
+#operare_artitalk .at_button, #artitalk_main .at_button {
+  color: #ffffff !important;
+}
+
+#artitalk_main .artitalk_avatar {
+  border-radius: 0px !important;
+}
+
+li.px1.pb2.flex.items-center {
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  margin-bottom: 15px !important;
+  border-bottom: 1px solid rgba(34, 36, 38, .15) !important;
+  padding-bottom: 15px !important;
+}
+
+.flex.justify-between {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.w100 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.h5.list-comcontent.overflow-hidden {
+  max-height: 40px !important;
+  overflow: hidden !important;
+  margin-top: 10px !important;
+}
+
+div#hot-comments {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+div#artitalk_main {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+div#artitalk_part1 {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+.counter-img {
+  height: 18px;
+  margin-left: 1px;
+  margin-right: 5px;
+}
+
+.counter-a {
+  vertical-align: middle;
+}
+
+.counter-a {
+  vertical-align: middle;
+}
+
+a#tab-next:hover {
+  background: rgb(244 168 30 / 68%) !important;
+}
+
+a#category-next:hover {
+  background: rgb(244 168 30 / 68%) !important;
+}
+
+/* 留言板样式 */
+.share-layer.aligncenter {
+  text-align: center;
+}
+
+.image-effect-fall-back {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.image-effect-fall-back .image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 1;
+}
+
+.image-effect-fall-back:hover .image-layer {
+  -webkit-transform: rotateX(70deg);
+  transform: rotateX(70deg);
+  overflow: visible;
+}
+
+.image-effect-fall-back .image-layer img {
+  height: 100%;
+}
+
+.image-effect-fall-back .image-layer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotateX(114deg) translateZ(-26px) translateY(110px) scale(0.75);
+  transform: rotateX(114deg) translateZ(-26px) translateY(110px) scale(0.75);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.image-effect-fall-back:hover .image-layer:before {
+  opacity: 0.3;
+}
+
+.image-effect-fall-back .share-layer {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: rotateX(70deg);
+  transform: rotateX(70deg);
+}
+
+.image-effect-fall-back:hover .share-layer {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg) translateY(-70px);
+  transform: rotateX(0deg) translateY(-70px);
+}
+
+.share-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff !important;
+  padding: 5px;
+  width: auto;
+  border-radius: 2px;
+  margin: 25px 10px;
+}
+
+.share-via-facebook {
+  background-color: #00aced;
+}
+
+.share-via-twitter {
+  background-color: #14BD03;
+}
+
+.share-via-pinterest {
+  background-color: #ffffff;
 }

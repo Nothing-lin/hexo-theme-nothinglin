@@ -16,8 +16,9 @@
       <div class="five wide column">
         <div class="ui segment border-background-less margin-top-15">
           <div class="ui card">
-            <div class="image padding-5">
-              <img src="<%- url_for('/img/avatar.jpg') %>">
+            <div class="ui slide masked reveal image padding-5">
+              <img src="<%- url_for('/img/avatar.jpg') %>" class="visible content">
+              <img src="https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/12/5/20211205010929.jpeg" class="hidden content">
             </div>
           </div>
         </div>
@@ -42,8 +43,8 @@
     <div class="ui segment row-flex-left margin-padding-less border-background-less">
 
       <h3 class="ui header margin-5">
-        <a href="<%- url_for(post.path) %>" title="<%- post.title %>">
-          <%- truncate(post.title || '该文章无标题', {length: 70, omission: '...'}) %></a>
+        <a href="<%- url_for(post.path) %>">
+          <%- truncate(post.title || '该文章无标题', {length: 100, omission: '...'}) %></a>
           <div class="ui background-thin-red label margin-5 font-white">
             <% if(post.categories.length){ %>
             <%- list_categories(post.categories, {
@@ -64,7 +65,7 @@
       <div class="five wide column">
         <div class="ui card margin-10">
           <div class="image">
-            <img class="ui small image" src="<%- url_for('/img/default.png') %>">
+            <img class="ui small image" src="<%- post.index_img %>">
           </div>
         </div>
       </div>

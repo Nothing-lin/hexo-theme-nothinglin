@@ -2,11 +2,12 @@
 <div class="eleven wide column">
   <div class="ui segment background-thin-yellow">
     <!-- 标签栏 -->
-    <div class="row-flex flex-wrap">
+    <div class="row-flex flex-wrap category2-lists">
       <a href="/categories/" class="tabs-nav">全部</a>
       <% site.categories.each(function(item) { %>
       <a href="<%- url_for(item.path) %>" class="tabs-nav"><%=item.name%> (<%=item.length%>)</a>
       <% }) %>
+      <a class="tabs-nav" id="category2-next">展开更多<i class="angle double right icon"></i></a>
     </div>
   </div>
 
@@ -20,8 +21,8 @@
     <div class="ui segment row-flex-left margin-padding-less border-background-less">
 
       <h3 class="ui header margin-5">
-        <a href="<%- url_for(e.path) %>"  title="<%- e.title %>">
-          <%- truncate(e.title || '该文章无标题', {length: 70, omission: '...'}) %></a>
+        <a href="<%- url_for(e.path) %>">
+          <%- truncate(e.title || '该文章无标题', {length: 27, omission: '...'}) %></a>
       </h3>
 
       <div class="ui background-thin-red label margin-5 font-white">

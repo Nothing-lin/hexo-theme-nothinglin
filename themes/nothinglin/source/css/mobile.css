@@ -34,6 +34,7 @@
   .gototop {
     width: 30px !important;
     height: 30px !important;
+    left: 25px !important;
   }
 
   i.big.icon, i.big.icons {
@@ -177,27 +178,59 @@
   }
 
   .ui.grid.stackable.footer-hide {
-      display: none;
+    display: none;
   }
 
   .content h1 {
-      border-bottom-width: 4px;
-      border-bottom-color: #D56464;
-      border-bottom-style: solid;
-      border-radius: 1.285714rem;
-      padding: 5px;
-      color: #333333;
-      font-size: 17px;
-      padding-left: 8px!important;
-      margin-bottom: 35px;
+    border-bottom-width: 4px;
+    border-bottom-color: #D56464;
+    border-bottom-style: solid;
+    border-radius: 1.285714rem;
+    padding: 5px;
+    color: #333333;
+    font-size: 17px;
+    padding-left: 8px !important;
+    margin-bottom: 35px;
   }
+
   .content h2 {
-      font-size: 15px;
-      margin-top: 45px;
-      border-bottom-style: solid;
-      border-bottom-width: 0.5px;
-      border-bottom-color: #d2d2d2;
-      padding-bottom: 15px;
-      margin-bottom: 20px;
+    font-size: 15px;
+    margin-top: 45px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #d2d2d2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  #artitalk_main .cbp_tmtimeline>li .cbp_tmlabel {
+    margin: 12px 0 25px 0px !important;
+    padding: 10px;
+  }
+
+  #artitalk_main ul#maina>li {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #artitalk_main #shuoshuo_content {
+    padding: 0px !important;
+  }
+
+  #artitalk_main .shuoshuo_author_img img {
+    width: 40px;
+    height: 40px;
+  }
+
+  body.awesome-iframe {
+    display: none;
+  }
+
+  .image-effect-fall-back {
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
   }
 }

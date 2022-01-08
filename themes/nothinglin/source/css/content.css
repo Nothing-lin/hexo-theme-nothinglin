@@ -45,7 +45,14 @@ div.enlighter {
 }
 
 .content p {
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.post-rating p {
+    font-size: 16px;
+    text-align: center;
 }
 
 .content h1 {
@@ -69,6 +76,9 @@ div.enlighter {
     margin-bottom: 20px;
 }
 
+.content blockquote p{
+  font-size: 14px;
+}
 
 .content blockquote {
   border-radius: 10px;
@@ -77,7 +87,7 @@ div.enlighter {
   margin: 20px auto;
   font-family: Open Sans;
   color: #555;
-  padding: 15px 20px 15px 50px;
+  padding: 15px 20px 15px 20px;
   line-height: 1.6;
   position: relative;
   background: #F5F2F0;
@@ -88,7 +98,6 @@ div.enlighter {
 
 .content blockquote::before {
   font-family: Arial;
-  content: "\201C";
   color: #D56464;
   font-size: 3.4em;
   position: absolute;

@@ -14,8 +14,29 @@ title: Nothinglin的个人博客
 # 来必力评论系统
 # livere配置
 livere:
-  enable: true
+  enable: false
   uid: MTAyMC81MzA1OS8yOTUzNQ==
+
+# Twikoo
+# 基于腾讯云开发
+# Based on Tencent CloudBase
+# See: https://twikoo.js.org
+twikoo:
+  enable: true
+  envId: https://www.nothinglintwikoo.ml/
+
+# tawk在线聊天系统
+tawk:
+  enable: true
+
+# tidio在线聊天系统
+tidio:
+  enable: false
+
+# Chatra在线聊天系统
+chatra:
+  enable: false
+
 
 # 博客brand设置
 blogTitle:
@@ -34,7 +55,7 @@ shareHref:
   jianshu: https://www.jianshu.com/u/a47e6b0d2a32
   github: https://github.com/Nothing-lin
   weibo:
-  rss:
+  rss: https://www.nothinglin.ml/atom.xml
 
 ## Feed
 rss: /atom.xml
